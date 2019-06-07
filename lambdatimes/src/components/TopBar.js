@@ -24,7 +24,7 @@ const TopBar = () => {
         <TopBarContainerRight>
           <Spans right>LOG IN</Spans>
         </TopBarContainerRight>
-        
+
       </TopBarContainer>
     </TopBarCss>
   )
