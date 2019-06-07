@@ -50,7 +50,7 @@ export default class Content extends Component {
       return cardData.filter(card => card.tab === this.state.selected)
     }
 
-    return this.state.cards;
+    // return this.state.cards;
   };
 
   render() {
