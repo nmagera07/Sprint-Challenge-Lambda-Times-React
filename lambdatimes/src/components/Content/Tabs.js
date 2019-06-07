@@ -12,7 +12,7 @@ const Tabs = props => {
               <Tab 
                 selectTabHandler={props.selectTabHandler} 
                 selectedTab={props.selectedTab} 
-                tab={tab} />
+                git tab={tab} />
             })
       </div>
     </div>
