@@ -1,5 +1,5 @@
 import React from 'react';
-import { TopBarCss, TopBarContainer, TopBarContainerLeft, TopBarContainerCenter, TopBarContainerRight, ContainerLeftSpan, ContainerCenterSpan, ContainerRightSpan } from './Content/StyledComponents'
+import { TopBarCss, TopBarContainer, TopBarContainerLeft, TopBarContainerCenter, TopBarContainerRight, Spans } from './Content/StyledComponents'
 // Refactor this component to use styled components and not classNames. 
 // You can find the corresponding CSS in the CSS/index.css file
 
@@ -7,15 +7,24 @@ const TopBar = () => {
   return (
     <TopBarCss>
       <TopBarContainer>
+
         <TopBarContainerLeft>
-          <ContainerLeftSpan>TOPICS</ContainerLeftSpan><ContainerLeftSpan>SEARCH</ContainerLeftSpan>
+          <Spans left>TOPICS</Spans>
+          <Spans left>SEARCH</Spans>
         </TopBarContainerLeft>
+
         <TopBarContainerCenter>
-          <ContainerCenterSpan>GENERAL</ContainerCenterSpan><ContainerCenterSpan>BROWNBAG</ContainerCenterSpan><ContainerCenterSpan>RANDOM</ContainerCenterSpan><ContainerCenterSpan>MUSIC</ContainerCenterSpan><ContainerCenterSpan>ANNOUNCEMENTS</ContainerCenterSpan>
+          <Spans center>GENERAL</Spans>
+          <Spans center>BROWNBAG</Spans>
+          <Spans center>RANDOM</Spans>
+          <Spans center>MUSIC</Spans>
+          <Spans center>ANNOUNCEMENTS</Spans>
         </TopBarContainerCenter>
+
         <TopBarContainerRight>
-          <ContainerRightSpan>LOG IN</ContainerRightSpan>
+          <Spans right>LOG IN</Spans>
         </TopBarContainerRight>
+        
       </TopBarContainer>
     </TopBarCss>
   )

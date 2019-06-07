@@ -49,17 +49,36 @@ export const TopBarContainerRight = styled.div`
     font-weight: bold;
 `
 
-export const ContainerLeftSpan = styled.span`
-    cursor: pointer;
-    margin-right: 25%;
-    font-weight: bold;
-`
-
-export const ContainerCenterSpan = styled.span`
-    cursor: pointer;
-    margin-right: 5%;
-`
-
-export const ContainerRightSpan = styled.span`
-    cursor: pointer;
+export const Spans = styled.span`
+    ${props =>  
+        props.left
+        ? `
+        cursor: pointer;
+        margin-right: 25%;
+        font-weight: bold;
+        ` 
+        :null
+    }
+    ${props =>
+        props.center
+        ? `
+        cursor: pointer;
+         margin-right: 5%;
+         &:hover{
+            text-decoration: underline;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        `
+        : null
+    }
+    ${props =>
+        props.right
+        ? `
+        cursor: pointer;
+        `
+        : null
+    }
+    
 `
